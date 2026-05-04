@@ -11,7 +11,7 @@ print(f"connecting model {target_model}...")
 try:
 
     response = client.models.generate_content(
-        model=target_model,
+        model="gemini-2.5-flash",
     
          contents=[
               {"role": "user", "parts": [{"text": "python"}]}
